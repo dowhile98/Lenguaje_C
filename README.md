@@ -1,4 +1,4 @@
-# Lenguaje_C
+# CURSO DE PROGRAMACION LENGUAJE
 Curso básico de Introducción a los sistemas integrados y a la Programación en Lenguaje C orientado a estudiantes de Ingeniería Electrónica.
 <img src="https://user-images.githubusercontent.com/47931397/148652755-fb13fd26-8a3f-408d-878d-bbacc4730611.png">
 ## Objetivos
