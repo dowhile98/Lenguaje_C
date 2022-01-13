@@ -1,1 +1,1 @@
-system("PAUSE");        //mantiene al ejecutable abierto
+int n,m;
