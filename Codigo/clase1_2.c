@@ -14,7 +14,7 @@ int main(void){
     /*mostrar un mensaje y pedir un valor*/
     printf("AREA DE UN CIRCULO\n");
     printf("RADIO->");
-    scanf("%f",&r);
+    scanf("%d",&r);
     A = PI * r * r;
     printf("\nAREA-> %f metros cuadrados\n",A);
     /*salida del programa*/
