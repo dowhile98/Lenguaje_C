@@ -21,6 +21,7 @@ int main(void){
         printf("Falso\n");
     }
     n += 10;
+    
     /*operaciones matematicas*/
     res = (float)n/m;
     printf("RES1->%.2f\n",res);
