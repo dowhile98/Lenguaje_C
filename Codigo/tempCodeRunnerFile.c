@@ -1,1 +1,0 @@
-system("PAUSE");        //mantiene al ejecutable abierto
