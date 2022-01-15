@@ -1,4 +1,4 @@
-/*DEFINIMOS NUESTRAS LIBRERIAS*/
+/*INCLUIMOS DE FICHEROS*/
 #include <stdio.h>          // #include <libreria del compilador>
 
 /*DEFINIMOS NUESTRAS CONSTANTES*/

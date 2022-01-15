@@ -1,15 +1,30 @@
+/*INCLUIMOS DE FICHEROS*/
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
 
-/*PORB: bit3 = 1, bit6 = 0*/
-/*PINB: Verificar si bit4 ==1
-  *entonces poner PORTB: bit7 = 1 y bit5 = 0*/
-uint8_t PORTB = 0b01110010;  //0b00000000 (0-255)
-uint8_t PINB = 0b11011001;
+/*VARIABLES GLOBALES*/
+int num1;                                   // Se crea en la memoria ram
+int num2;
+float pi = 3.14;
 
+
+/*INICIAMOS LA FUNCIÓN MAIN*/
 int main(void){
 
+    //*DECLARAMOS UNA VARIABLE LOCALES*/
+    int num3 = 4;                           //stack (heap memory)
+
+    printf("CLASE 1 - LENGUAJE C\n");
+    printf("Estructura del lenguaje C\n");
+
+
+    num1 = (int)pi;                         // num1 = entero de pi = 3
+
+    printf("NUMERO 1-> %d\n",num1);
+    printf("NUMERO 3-> %d\n",num3);
+
     
+    
+    /*RETORNO DE LA FUNCION PRINCIPAL*/
     return 0;
 }
