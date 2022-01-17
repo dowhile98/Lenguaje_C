@@ -12,7 +12,6 @@ int main(void){
     //PORTB = PORTB &  0b11111011; PORTB &= 0xFB
     PORTB = PORTB & ~(1U<<2);       //PORTB &=~(1U<<2)
     printf("PORTB->0x%x\n",PORTB);
-
     //stateButton = PINB & 1U<<5;     //0b00100000 == 0x20
     stateButton = (PINB & 1U<<5)>>5;  //0b00000001
     if (stateButton)
