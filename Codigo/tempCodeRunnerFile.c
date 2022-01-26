@@ -1,1 +1,1 @@
- printf("%d es el mayor de %d numeros ingresados\n",mayor,i);
+return 0;
