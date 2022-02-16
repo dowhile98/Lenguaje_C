@@ -17,7 +17,11 @@ typedef struct{
     Correo_t correo;
 }Usuario_t;
 
-void MostrasDatosUsuario(Usuario_t *pUsuario);
+void MostrasDatosUsuario(Usuario_t pUsuario);
+
+static int stateButton; //no es accesible desde otro archivo
+
+int count;
 
 int main(void) {
 
@@ -32,14 +36,21 @@ int main(void) {
     sprintf(pepe.telefono.nombre,"Pepito");
     sprintf(pepe.correo.email,"pepe@example");
     sprintf(pepe.correo.login,"PEPITO20");
-    MostrasDatosUsuario(&pepe);
+    MostrasDatosUsuario(pepe);
+    MostrasDatosUsuario(pepe);
+    MostrasDatosUsuario(pepe);
+    MostrasDatosUsuario(pepe);
+    MostrasDatosUsuario(pepe);
     system("PAUSE");
     return 0;
 }
 
-void MostrasDatosUsuario(Usuario_t *pUsuario){
-    printf("NOMBRE: %s\nTelefono: %d\n",pUsuario->telefono.nombre,pUsuario->telefono.numMovil);
+void MostrasDatosUsuario(Usuario_t pUsuario){
+    static int count = 0;                   //solo se inicializan una sola vez
+    printf("NOMBRE: %s\nTelefono: %d\n",pUsuario.telefono.nombre,pUsuario.telefono.numMovil);
     
-    printf("Login: %s\nEmail: %s\n",pUsuario->correo.login,pUsuario->correo.email);
+    printf("Login: %s\nEmail: %s\n",pUsuario.correo.login,pUsuario.correo.email);
+    count++;
+    printf("numero de ejecuciones de la funcion->%d\n\r",count);
     return;
 }

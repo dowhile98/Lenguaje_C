@@ -13,6 +13,8 @@ int numeros[LENGTH_N];
 float numerosReales[] = {1.2,4.5,0.1,0.2};
 int matriz[FILA][COLUMNA];
 
+extern int count;
+
 char rxBuffer[100];
 /**
  * @brief INGREAR EL CONTENIDO DEL ARRAY POR TECLADO
